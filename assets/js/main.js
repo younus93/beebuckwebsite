@@ -65,10 +65,13 @@
 
     $('.testimonial-active').slick({
         infinite: true,
+        autoplay : true,
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         arrows: false,
         dots: true,
+        centerMode : true,
+        centerPadding : '100px',
         responsive: [{
                 breakpoint: 1024,
                 settings: {
@@ -217,6 +220,19 @@
         nextArrow: '<button type="button" class="slick-next"><i class="fal fa-long-arrow-right"></i></button>',
     });
 
+    $('.center-carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        centerMode : true,
+        centerPadding : '60px',
+        focusOnSelect : true,
+        arrows: true,
+        dots: false,
+        prevArrow: '<a type="button" class="slick-prev"><i class="fal fa-long-arrow-left"></i></a>',
+        nextArrow: '<a type="button" class="slick-next"><i class="fal fa-long-arrow-right"></i></a>',
+    });
+
     $('.testimonial-active2').slick({
         infinite: true,
         slidesToShow: 1,
@@ -334,6 +350,5 @@
         $('.responsive-header').removeClass('menu-open');
         $('.overlay').removeClass('show-overlay');
     })
-
 
 })(jQuery);
