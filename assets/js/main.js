@@ -71,7 +71,7 @@
         arrows: false,
         dots: true,
         centerMode : true,
-        centerPadding : '100px',
+        centerPadding : '50px',
         responsive: [{
                 breakpoint: 1024,
                 settings: {
