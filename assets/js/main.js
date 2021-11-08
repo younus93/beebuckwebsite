@@ -63,53 +63,55 @@
     */
 
 
-    $('.testimonial-active').slick({
-        infinite: true,
-        autoplay : true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
-        dots: true,
-        centerMode : true,
-        centerPadding : '50px',
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
+    // $('.testimonial-active').slick({
+    //     infinite: true,
+    //     autoplay : true,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     arrows: true,
+    //     dots: true,
+    //     prevArrow: '<button type="button" class="slick-prev"><i class="fal fa-long-arrow-left"></i></button>',
+    //     nextArrow: '<button type="button" class="slick-next"><i class="fal fa-long-arrow-right"></i></button>',
+    //     centerMode : true,
+    //     centerPadding : '50px',
+    //     responsive: [{
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 2,
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 992,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 576,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         }
 
-        ]
-    });
+    //     ]
+    // });
 
     /*
 
@@ -212,12 +214,52 @@
 
     $('.testimonialh3_active').slick({
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        autoplay : true,
+        slidesToShow: 3,
+        slidesToScroll: 5,
+        centerMode : true,
+        centerPadding : '50px',
         arrows: true,
-        dots: false,
+        dots : true,
         prevArrow: '<button type="button" class="slick-prev"><i class="fal fa-long-arrow-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fal fa-long-arrow-right"></i></button>',
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+    ]
     });
 
     $('.center-carousel').slick({

@@ -12,7 +12,6 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -23,13 +22,30 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <style>
+        
         a {
             text-decoration: none;
         }
 
         .testimonial-item {
             height: 700px;
+        }
+
+        .testimonialh3{
+            box-shadow: none;
+        }
+
+        .testimonialh3_active .slick-prev, .testimonialh3_active .slick-next{
+            border: 1px solid #19cb55;
+            color: #19cb55;
+        }
+
+        .testimonialh3_active .slick-prev:hover, .testimonialh3_active .slick-next:hover{
+            color: #fff;
+            background: #19cb55;
+            border: transparent;
         }
 
         .text-justify{
@@ -57,7 +73,7 @@
 
     <!-- HEADER START -->
     <header>
-        <div id="header-sticky" class="header-area transparent-header pt-10 pb-10">
+        <div id="header-sticky" class="header-area transparent-header pt-10 pb-10" style="position : fixed; background: white;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-2 col-lg-2 col-md-4 col-10 d-flex align-items-center">
@@ -73,10 +89,11 @@
                         <div class="main-menu colormenu d-block">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#features">Features</a></li>
+                                    <li><a href="#screenshots">Screenshots</a></li>
+                                    <li><a href="#contact">Contact us</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -104,7 +121,7 @@
 
 
     <main>
-        <div class="app_slider  d-flex align-items-center fix" style="background : white">
+        <div class="app_slider  d-flex align-items-center fix" style="background : white" id="home">
             <div class="App_shape-circle">
                 <img class="shapeAbsoulute scale-upOne d-sm-none d-md-block" style="margin-left:50px;"
                     src="assets/img/shape/circle.png" alt="" />
@@ -152,63 +169,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- FETURES START -->
-        <!-- <div class="homefeture_1 pt-115 pb-130">
-            <div class="container">
-                <div class="app_left_shape">
-                    <img class="leftanimation d-none d-sm-block" src="assets/img/shape/left.png" alt="leftshape" />
-                    <img src="assets/img/shape/shape7.png" alt="leftshape" />
-                    <img class="downsahpe d-none d-sm-block" src="assets/img/shape/shape3.png" alt="leftshape" />
-                </div>
-                <div class="section_title_wrapper text-center wow fadeInUp mb-70" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                    <h2 class="section-title">Shine the new <br> light on the digital world</h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="feabox mb-30">
-                            <div class="feabox__img mb-50">
-                                <img src="assets/img/fetures/Forma1.png" alt="form1" />
-                            </div>
-                            <div class="feabox__content">
-                                <h3 class="feabox-title tcolor0">Premium Plugins</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="feabox mb-30 clr1">
-                            <div class="feabox__img img1 mb-50">
-                                <img src="assets/img/fetures/Forma2.png" alt="form2" />
-                            </div>
-                            <div class="feabox__content">
-                                <h3 class="feabox-title tcolor1">Security Potential </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="feabox mb-30 clr2">
-                            <div class="feabox__img img2 mb-50">
-                                <img src="assets/img/fetures/Forma3.png" alt="form3" />
-                            </div>
-                            <div class="feabox__content">
-                                <h3 class="feabox-title tcolor2">Share Online</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="feabox mb-30 clr3">
-                            <div class="feabox__img img3 mb-50">
-                                <img src="assets/img/fetures/Forma4.png" alt="form4" />
-                            </div>
-                            <div class="feabox__content">
-                                <h3 class="feabox-title tcolor3">Risk Protectable</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- FETURES END -->
 
         <!-- FETURES CONTENT START -->
         <div class="app_image pt-150 pb-140">
@@ -277,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div class="app_image pt-150 pb-140">
+        <div class="app_image pt-150 pb-140" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12">
@@ -317,7 +277,7 @@
 
 
         <!-- APP DETAILS START -->
-        <div class="app_details pt-120 pb-20">
+        <div class="app_details pt-120 pb-20" id="features">
             <div class="container text-justify">
                 <div class="row align-items-center text-center">
                     <div class="col-xl-12">
@@ -425,8 +385,8 @@
 
         <!-- DOWNLOAD END  -->
 
-        <!-- TESTIMONIAL START  -->
-        <div class="testimonial-area  bg1 pt-110">
+
+        <div class="testimonial_h3 pt-110">
             <div class="testimonial_shape">
                 <img class="t-1" src="assets/img/shape/shape8.png" alt="shape" />
                 <img class="t-2" src="assets/img/shape/shape2.png" alt="shape" />
@@ -439,145 +399,105 @@
                         </div>
                     </div>
                 </div>
-                <div class="row testimonial-active tp-dot-style">
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="newsfeed.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/newsfeed.png" style="max-height: 400px;" alt="">
-                                    </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="testimonialh3_active tp-dot-style">
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/newsfeed.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Newsfeed</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="birthdays.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/birthday.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/birthday.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Birthdays</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="birthdays.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/signin.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/signin.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Sign In & Sign Up</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="profile.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/profile.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/profile.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Profile</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="friends.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/friends.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/friends.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Friends List</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="directory-1.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/directory-list.png" style="max-height: 400px;"
-                                            alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/directory-list.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Directory List</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="events-calender.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/event-ss.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/event-ss.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Events Calender</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="notifications.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/notifications.png" style="max-height: 400px;"
-                                            alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/notifications.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Notifications View</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="beehive-view.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/beehive-view.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/beehive-view.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">BeeHive View</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="admin.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/admin.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/admin.png" style="max-height: 400px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Admin Tools</h4>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-sm-12">
-                        <div class="testimonial-item pt-55">
-                            <div class="item">
-                                <a href="settings.html">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="assets/img/screens/settings.png" style="max-height: 400px;" alt="">
-                                    </div>
+                            <div class="testimonialh3 text-center">
+                                <div class="testimonialh3__image">
+                                    <img src="assets/img/screens/settings.png" style="max-height: 399px;" alt="">
+                                </div>
+                                <div class="testimonialh3__content">
                                     <h4 class="text-center">Settings</h4>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- TESTIMONIAL END -->
+
+
+
 
         <div class="try-area pt-100 mb-40">
             <div class="container">
@@ -609,16 +529,16 @@
 
 
 
-        <div class="app_image pt-50 mt-100 mb-100">
+        <div class="app_image pt-50 mt-100 mb-100" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 d-md-block">
                         <div class="wow zoomIn" data-wow-delay=".3s"
-                            style="width: 350px; visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;background: url(assets/img/screens/background.png);background-size: cover;">
+                            style="width: 350px; height: 700px; visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;background: url(assets/img/screens/background.png);background-size: cover;">
                             <div class="contact__form d-flex justify-content-center text-justify" data-wow-delay=".3s">
                                 <div class="ml-20 mt-75 m-5">
                                     <ul>
-                                        <li class="text-center"><img style="max-height:60px;"
+                                        <li class="text-center mb-3"><img style="max-height:120px;"
                                                 src="assets/img/logo/logo.png" alt=""></li>
                                         <li><a href="tel:123"><img style="max-height:15px;"
                                                     src="assets/img/shape/phone.png" alt=""> +66 2661 9955-8</a></li>
@@ -656,9 +576,14 @@
                                             <input type="email" placeholder="Your Email">
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <div class="col-xl-6 col-md-6">
                                         <div class="post-input contact-form">
-                                            <input type="text" placeholder="subject">
+                                            <input type="number" placeholder="Your Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="post-input contact-form">
+                                            <input type="text" placeholder="Subject">
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
@@ -679,7 +604,7 @@
             </div>
         </div>
 
-        <a href="#" class="d-flex flex-column justify-content-center m-3" style="position:fixed;right:0;bottom:0; background-color: #19cb55; height: 50px; width : 50px; border-radius: 50px;">
+        <a href="#" class="d-flex flex-column justify-content-center m-5" style="position:fixed;right:0;bottom:0; background-color: #19cb55; height: 50px; width : 50px; border-radius: 50px;">
             <div class="text-center" style="max-height: 30px;">
                 <i style="color: white;" class="fa fa-arrow-up"></i>
             </div>
